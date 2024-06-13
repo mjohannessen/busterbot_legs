@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {   "name": "Pico Debug",
+            "device": "RP2040",
+            "gdbPath": "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/arm-none-eabi-gdb",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/build/busterbot_feet.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/cmsis-dap.cfg",
+                "target/rp2040.cfg"
+            ],
+            "openOCDLaunchCommands": [
+                "transport select swd",
+                "adapter speed 5000"
+            ],
+            "svdFile": "${env:PICO_SDK_PATH}/src/rp2040/hardware_regs/rp2040.svd",
+            "postRestartCommands": [
+                "break main",
+                "continue"
+            ],
+            "showDevDebugOutput": "vscode",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            }
+            
+        }
+    ],
+    
+    "logging": {
+        "cortex-debug": true,
+        "programOutput": true,
+        "adapterOutput": true
+    }
+ }
+ 
