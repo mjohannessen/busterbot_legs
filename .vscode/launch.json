@@ -5,7 +5,7 @@
             "device": "RP2040",
             "gdbPath": "/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/arm-none-eabi-gdb",
             "cwd": "${workspaceRoot}",
-            "executable": "${workspaceRoot}/build/busterbot_feet.elf",
+            "executable": "${workspaceRoot}/build/src/busterbot_feet.elf",
             "request": "launch",
             "type": "cortex-debug",
             "servertype": "openocd",

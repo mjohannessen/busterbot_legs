@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2
+CMAKE_SOURCE_DIR = /Users/markjohannessen/pico_projects/busterbot_legs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build
+CMAKE_BINARY_DIR = /Users/markjohannessen/pico_projects/busterbot_legs/build
 
 # Utility rule file for bs2_default_padded_checksummed_asm.
 
@@ -69,12 +69,12 @@ include pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checks
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2 && /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 /Users/markjohannessen/pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/markjohannessen/pico_projects/busterbot_legs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating bs2_default_padded_checksummed.S"
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2 && /opt/homebrew/Frameworks/Python.framework/Versions/3.12/bin/python3.12 /Users/markjohannessen/pico/pico-sdk/src/rp2_common/boot_stage2/pad_checksum -s 0xffffffff /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default_padded_checksummed.S
 
 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin: pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2 && /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/arm-none-eabi-objcopy -Obinary /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/markjohannessen/pico_projects/busterbot_legs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating bs2_default.bin"
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2 && /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/bin/arm-none-eabi-objcopy -Obinary /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.elf /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
 
 bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm
 bs2_default_padded_checksummed_asm: pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
@@ -87,10 +87,10 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_as
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_padded_checksummed_asm.dir/cmake_clean.cmake
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2 && $(CMAKE_COMMAND) -P CMakeFiles/bs2_default_padded_checksummed_asm.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2 /Users/markjohannessen/pico/pico-sdk/src/rp2_common/boot_stage2 /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2 /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/markjohannessen/pico_projects/busterbot_legs /Users/markjohannessen/pico/pico-sdk/src/rp2_common/boot_stage2 /Users/markjohannessen/pico_projects/busterbot_legs/build /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2 /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 

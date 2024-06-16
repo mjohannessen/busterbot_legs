@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/Users/markjohannessen/pico/pico-sdk")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/Users/markjohannessen/pico_projects/busterbot_legs/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

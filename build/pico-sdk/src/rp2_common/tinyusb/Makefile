@@ -57,10 +57,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2
+CMAKE_SOURCE_DIR = /Users/markjohannessen/pico_projects/busterbot_legs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build
+CMAKE_BINARY_DIR = /Users/markjohannessen/pico_projects/busterbot_legs/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/CMakeFiles /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb//CMakeFiles/progress.marks
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/CMakeFiles 0
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/markjohannessen/pico_projects/busterbot_legs/build/CMakeFiles /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb//CMakeFiles/progress.marks
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/markjohannessen/pico_projects/busterbot_legs/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/clean
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/preinstall
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/preinstall
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/rule:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/rule
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/rule
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/rule
 
 # Convenience name for target.
@@ -127,12 +127,12 @@ PioasmBuild: pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/rule
 
 # fast build rule for target.
 PioasmBuild/fast:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/build
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.dir/build
 .PHONY : PioasmBuild/fast
 
 # Convenience name for target.
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/rule:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/rule
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/rule
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/rule
 
 # Convenience name for target.
@@ -141,12 +141,12 @@ tinyusb_pico_pio_usb_usb_tx_pio_h: pico-sdk/src/rp2_common/tinyusb/CMakeFiles/ti
 
 # fast build rule for target.
 tinyusb_pico_pio_usb_usb_tx_pio_h/fast:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/build
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/build
 .PHONY : tinyusb_pico_pio_usb_usb_tx_pio_h/fast
 
 # Convenience name for target.
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/rule:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/rule
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/rule
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/rule
 
 # Convenience name for target.
@@ -155,7 +155,7 @@ tinyusb_pico_pio_usb_usb_rx_pio_h: pico-sdk/src/rp2_common/tinyusb/CMakeFiles/ti
 
 # fast build rule for target.
 tinyusb_pico_pio_usb_usb_rx_pio_h/fast:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/build
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/build.make pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/build
 .PHONY : tinyusb_pico_pio_usb_usb_rx_pio_h/fast
 
 # Help Target
@@ -180,6 +180,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

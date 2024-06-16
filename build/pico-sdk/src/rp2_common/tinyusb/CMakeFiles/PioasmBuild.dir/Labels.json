@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild.rule"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild-complete.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/PioasmBuild-complete.rule"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-build.rule"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-configure.rule"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-download.rule"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-install.rule"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir.rule"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch.rule"
 		},
 		{
-			"file" : "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
+			"file" : "/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/pioasm/src/PioasmBuild-stamp/PioasmBuild-update.rule"
 		}
 	],
 	"target" : 

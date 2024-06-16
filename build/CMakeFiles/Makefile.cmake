@@ -141,13 +141,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/markjohannessen/pico/pico-sdk/tools/CMakeLists.txt"
   "/Users/markjohannessen/pico/pico-sdk/tools/FindELF2UF2.cmake"
   "/Users/markjohannessen/pico/pico-sdk/tools/FindPioasm.cmake"
-  "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/CMakeLists.txt"
+  "/Users/markjohannessen/pico_projects/busterbot_legs/CMakeLists.txt"
   "CMakeFiles/3.29.2/CMakeASMCompiler.cmake"
   "CMakeFiles/3.29.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.29.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.29.2/CMakeSystem.cmake"
-  "elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
   "pico-sdk/src/rp2_common/tinyusb/pioasm/tmp/PioasmBuild-mkdirs.cmake"
+  "src/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
+  "/Users/markjohannessen/pico_projects/busterbot_legs/src/CMakeLists.txt"
   )
 
 # The corresponding makefile is:
@@ -158,13 +159,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
-  "elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-source_dirinfo.txt"
-  "elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update-info.txt"
-  "elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch-info.txt"
-  "elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "FREERTOS_KERNEL/CMakeFiles/CMakeDirectoryInformation.cmake"
   "generated/pico_base/pico/version.h"
   "generated/pico_base/pico/config_autogen.h"
   "pico-sdk/CMakeFiles/CMakeDirectoryInformation.cmake"
@@ -253,12 +248,17 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "pico-sdk/src/rp2040/hardware_regs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico-sdk/src/rp2040/hardware_structs/CMakeFiles/CMakeDirectoryInformation.cmake"
   "pico-sdk/docs/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "FREERTOS_KERNEL/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "src/elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
+  "src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-source_dirinfo.txt"
+  "src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update-info.txt"
+  "src/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch-info.txt"
+  "src/elf2uf2/tmp/ELF2UF2Build-cfgcmd.txt"
+  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/busterbot_feet.dir/DependInfo.cmake"
-  "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/DependInfo.cmake"
@@ -266,4 +266,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_tx_pio_h.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/pico_cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake"
+  "src/CMakeFiles/busterbot_feet.dir/DependInfo.cmake"
+  "src/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   )

@@ -53,10 +53,10 @@ RM = /Applications/CMake.app/Contents/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2
+CMAKE_SOURCE_DIR = /Users/markjohannessen/pico_projects/busterbot_legs
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build
+CMAKE_BINARY_DIR = /Users/markjohannessen/pico_projects/busterbot_legs/build
 
 # Utility rule file for tinyusb_pico_pio_usb_usb_rx_pio_h.
 
@@ -69,8 +69,8 @@ include pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_p
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h: pico-sdk/src/rp2_common/tinyusb/usb_rx.pio.h
 
 pico-sdk/src/rp2_common/tinyusb/usb_rx.pio.h: /Users/markjohannessen/pico/pico-sdk/lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB/src/usb_rx.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating usb_rx.pio.h"
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb && ../../../../pioasm/pioasm -o c-sdk /Users/markjohannessen/pico/pico-sdk/lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB/src/usb_rx.pio /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/usb_rx.pio.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/markjohannessen/pico_projects/busterbot_legs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating usb_rx.pio.h"
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb && ../../../../pioasm/pioasm -o c-sdk /Users/markjohannessen/pico/pico-sdk/lib/tinyusb/hw/mcu/raspberry_pi/Pico-PIO-USB/src/usb_rx.pio /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/usb_rx.pio.h
 
 tinyusb_pico_pio_usb_usb_rx_pio_h: pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h
 tinyusb_pico_pio_usb_usb_rx_pio_h: pico-sdk/src/rp2_common/tinyusb/usb_rx.pio.h
@@ -82,10 +82,10 @@ pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/build
 
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/clean:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb && $(CMAKE_COMMAND) -P CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/cmake_clean.cmake
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb && $(CMAKE_COMMAND) -P CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/cmake_clean.cmake
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/depend:
-	cd /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2 /Users/markjohannessen/pico/pico-sdk/src/rp2_common/tinyusb /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/markjohannessen/pico_projects/busterbot_legs/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/markjohannessen/pico_projects/busterbot_legs /Users/markjohannessen/pico/pico-sdk/src/rp2_common/tinyusb /Users/markjohannessen/pico_projects/busterbot_legs/build /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb /Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : pico-sdk/src/rp2_common/tinyusb/CMakeFiles/tinyusb_pico_pio_usb_usb_rx_pio_h.dir/depend
 

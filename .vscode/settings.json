@@ -15,7 +15,8 @@
         "stdbool.h": "c",
         "cstdio": "cpp",
         "core": "cpp",
-        "cstdint": "cpp"
+        "cstdint": "cpp",
+        "random": "cpp"
     },
     "task.verboseLogging": true,
     "C_Cpp.loggingLevel": "Warning",

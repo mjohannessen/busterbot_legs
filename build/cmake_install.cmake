@@ -1,4 +1,4 @@
-# Install script for directory: /Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2
+# Install script for directory: /Users/markjohannessen/pico_projects/busterbot_legs
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,8 +39,9 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/FREERTOS_KERNEL/cmake_install.cmake")
-  include("/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/pico-sdk/cmake_install.cmake")
+  include("/Users/markjohannessen/pico_projects/busterbot_legs/build/pico-sdk/cmake_install.cmake")
+  include("/Users/markjohannessen/pico_projects/busterbot_legs/build/FREERTOS_KERNEL/cmake_install.cmake")
+  include("/Users/markjohannessen/pico_projects/busterbot_legs/build/src/cmake_install.cmake")
 
 endif()
 
@@ -52,5 +53,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/markjohannessen/pico_projects/busterbot-pico/busterbot_2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/markjohannessen/pico_projects/busterbot_legs/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
