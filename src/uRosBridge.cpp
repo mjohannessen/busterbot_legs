@@ -241,23 +241,51 @@ void uRosBridge::createEntities(){
 	printf("Creating publisher entities\n");
 
 	PubCmd_t cmd;
+
+	// see .h
+	/*
+	rcl_timer_t xTimer;
+	rcl_node_t xNode;
+	rcl_allocator_t xAllocator;
+	rclc_support_t xSupport;
+	rclc_executor_t xExecutor;
+	*/
+
+	/// see 
+
 	xAllocator = rcl_get_default_allocator();
+	rcl_init_options_t init_options = rcl_get_zero_initialized_init_options();
+	rcl_init_optons_init(&init_options, xAllocator);
+	rmw_init_options_t* rmw_options = rcl_init_options_get_rmw_init_options(&init_options);
+	rmw_uros_set_udp_address("0;0;0;0");
+	rmw_uros_set_client_key(0xCAFEBABE, rmw_options);
+	rclc_support_init_with_options(&xSupport, 0, NULL, &init_options, &xAllocator);
+
+	// create init options
+	rmw_init_options_t* rmw_options = rcl_init_options_get_rmw_init_options(&init_options);
+	rcl_node_options_t node_ops = rcl_node_get_default_options();
+	node_ops.domain_id = 1;
+	const char* node_name = "pico_node";
+	rclc_node_init_with_options(&xNode, node_name, "", &xSupport, &node_ops);
+
 
 	// Modified to set domain ID
 	// Initialize and modify options (Set DOMAIN ID to 1)
-	printf("Setting domain ID to 1\n");
-	rcl_init_options_t init_options = rcl_get_zero_initialized_init_options();
-	rcl_ret_t dummy1 = rcl_init_options_init(&init_options, xAllocator);
-	rcl_ret_t dummy2 = rcl_init_options_set_domain_id(&init_options, 1);
+	//printf("Setting domain ID to 1\n");
+	//rcl_init_options_t init_options = rcl_get_zero_initialized_init_options();
+
+
+	//rcl_ret_t dummy1 = rcl_init_options_init(&init_options, xAllocator);
+	//rcl_ret_t dummy2 = rcl_init_options_set_domain_id(&init_options, 1);
 	// Initialize rclc support object with custom options
-	rclc_support_init_with_options(&xSupport, 0, NULL, &init_options, &xAllocator);
+	
 
 	// Original
 	//rclc_support_t support;
 	//rclc_support_init(&xSupport, 0, NULL, &xAllocator);
 
-	printf("Init pico_node\n");
-	rclc_node_init_default(&xNode, "pico_node", "", &xSupport);
+	//printf("Init pico_node\n");
+	//rclc_node_init_default(&xNode, "pico_node", "", &xSupport);
 
 	printf("Adding publisher pico_count\n");
 	rclc_publisher_init_default(
@@ -266,10 +294,11 @@ void uRosBridge::createEntities(){
 		ROSIDL_GET_MSG_TYPE_SUPPORT(std_msgs, msg, Int32),
 		"pico_count");
 
+	const unsigned int timer_timeout = 1000;
 	rclc_timer_init_default2(
 		&xTimer,
 		&xSupport,
-		RCL_MS_TO_NS(1000),
+		RCL_MS_TO_NS(timer_timeout),
 		uRosBridge::timerCallback,
 		true);
 
@@ -283,6 +312,7 @@ void uRosBridge::createEntities(){
 	}
 
 	// add timer to executor
+	xExecutor = rclc_executor_get_zero_initialized_executor();
 	rclc_executor_init(&xExecutor, &xSupport.context, handles, &xAllocator);
 	rclc_executor_add_timer(&xExecutor, &xTimer);
 
